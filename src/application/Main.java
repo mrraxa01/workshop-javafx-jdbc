@@ -11,10 +11,6 @@ public class Main extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			FXMLLoader loader = new FXMLLoader(getClass().getResource("/gui/MainView.fxml"));
-			/* Modificações para ajustar o menu na tela:
-				retirar o	Parent parent = loader.load();
-			*/		
-			
 			ScrollPane scrollPane = loader.load();
 			scrollPane.setFitToHeight(true);
 			scrollPane.setFitToWidth(true);
