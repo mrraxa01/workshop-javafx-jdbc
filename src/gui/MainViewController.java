@@ -51,8 +51,9 @@ public class MainViewController implements Initializable {
 	}
 	
 	private synchronized <T> void loadView(String absoluteName, Consumer<T> initializingAction) {
-		FXMLLoader loader = new FXMLLoader(getClass().getResource(absoluteName));
+		
 		try {
+			FXMLLoader loader = new FXMLLoader(getClass().getResource(absoluteName));
 			VBox newVBox = loader.load();
 			
 			Scene mainScene = Main.getMainScene();
